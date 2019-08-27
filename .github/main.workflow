@@ -1,6 +1,6 @@
 workflow "Start Action" {
   on = "pull_request"
-  resolves = ["GitHub Action for Docker-2"]
+  resolves = ["GitHub Action for Docker ECR"]
 }
 
 action "GitHub Action for Docker Build" {
