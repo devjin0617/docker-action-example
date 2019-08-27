@@ -21,11 +21,11 @@ action "GitHub Action for AWS" {
 action "GitHub Action for Docker Tag" {
   uses = "actions/docker/cli@fe7ed3ce992160973df86480b83a2f8ed581cd50"
   needs = ["GitHub Action for AWS", "GitHub Action for Docker Build"]
-  args = "tag docker-action-example:latest 660261524637.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test:latest"
+  args = "tag docker-action-example 660261524637.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test"
 }
 
 action "GitHub Action for Docker ECR" {
   uses = "actions/docker/cli@fe7ed3ce992160973df86480b83a2f8ed581cd50"
   needs = ["GitHub Action for AWS", "GitHub Action for Docker Tag"]
-  args = "push 660261524637.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test:latest"
+  args = "push 660261524637.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test"
 }
