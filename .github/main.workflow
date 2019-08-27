@@ -12,7 +12,7 @@ action "GitHub Action for AWS" {
   uses = "actions/aws/cli@efb074ae4510f2d12c7801e4461b65bf5e8317e6"
   needs = ["GitHub Action for Docker Build"]
   secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
-  args = "aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION | sh"
+  args = "ecr get-login --no-include-email --region $AWS_DEFAULT_REGION | sh"
   env = {
     AWS_DEFAULT_REGION = "ap-northeast-2"
   }
