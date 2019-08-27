@@ -21,7 +21,7 @@ action "GitHub Action for AWS" {
 action "GitHub Action for Docker-1" {
   uses = "actions/docker/cli@fe7ed3ce992160973df86480b83a2f8ed581cd50"
   needs = ["GitHub Action for AWS"]
-  args = "tag docker-test:latest 660261524637.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test:latest"
+  args = "tag docker-action-example:latest 660261524637.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test:latest"
 }
 
 action "GitHub Action for Docker-2" {
