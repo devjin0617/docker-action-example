@@ -5,6 +5,6 @@
 - [x] Vuejs
 - [x] Docker Build:Action
 - [x] Docker run
-- [ ] AWS Login:Action
-- [ ] Upload AWS ESR:Action
+- [x] AWS Login:Action
+- [x] Upload AWS ESR:Action
 - [ ] Deploy AWS ESC:Action
