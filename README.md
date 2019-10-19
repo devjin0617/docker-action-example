@@ -7,4 +7,4 @@
 - [x] Docker run
 - [x] AWS Login:Action
 - [x] Upload AWS ESR:Action
-- [ ] Deploy AWS ESC:Action
+- [ ] Deploy AWS ECS:Action
